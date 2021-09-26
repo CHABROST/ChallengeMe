@@ -1,0 +1,53 @@
+﻿<Window x:Class="ChallengeMe.Niveau15"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChallengeMe"
+        mc:Ignorable="d"
+        Title="Niveau 15" Height="600" Width="900" WindowStartupLocation="CenterScreen" Closed="backToMain">
+    <Grid Margin="0,0,2,1">
+        <Label Content="Votre Score :" HorizontalAlignment="Right" Margin="0,23,50,0" VerticalAlignment="Top" Width="152" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Stencil" FontSize="20" RenderTransformOrigin="-0.201,0.617" Grid.Column="1" Height="34"/>
+        <Label Content="Pseudonyme :" HorizontalAlignment="Left" Margin="26,16,0,0" VerticalAlignment="Top" Width="152" FontFamily="Stencil" FontSize="20" RenderTransformOrigin="0.425,0.525" Height="34"/>
+        <Label x:Name="pseudo" Content="" Margin="183,16,0,0" VerticalAlignment="Top" FontFamily="Stencil" FontSize="20" Height="34" Loaded="pseudoAfficher" HorizontalAlignment="Left" Width="145"/>
+        <Label x:Name="scoring" Content="" Grid.Column="1" HorizontalAlignment="Right" Margin="0,24,10.6,0" VerticalAlignment="Top" FontFamily="Stencil" FontSize="20" Loaded="scoreAfficher" Width="40"/>
+        <Image Margin="198,159,207.6,239.4" Source="Image6.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="A quoi correspond le point d'interrogation ?" HorizontalAlignment="Center" Margin="0,101,0,0" VerticalAlignment="Top" FontFamily="Stencil" FontSize="20"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="356,360,0,0" VerticalAlignment="Top" Width="149" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="95">
+            <Button.Background>
+                <ImageBrush ImageSource="Image2.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="546,445,0,0" VerticalAlignment="Top" Width="111" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="95">
+            <Button.Background>
+                <ImageBrush ImageSource="image3.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="198,407,0,0" VerticalAlignment="Top" Width="122" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="133">
+            <Button.Background>
+                <ImageBrush ImageSource="Image5.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="715,136,0,0" VerticalAlignment="Top" Width="133" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="141">
+            <Button.Background>
+                <ImageBrush ImageSource="Image7.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="26,136,0,0" VerticalAlignment="Top" Width="129" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="141">
+            <Button.Background>
+                <ImageBrush ImageSource="Image8.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="689,342,0,0" VerticalAlignment="Top" Width="158" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="113" RenderTransformOrigin="0.494,0.467">
+            <Button.Background>
+                <ImageBrush ImageSource="Image9.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="46,342,0,0" VerticalAlignment="Top" Width="109" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="113" Click="changerNiveau">
+            <Button.Background>
+                <ImageBrush ImageSource="Image1.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
